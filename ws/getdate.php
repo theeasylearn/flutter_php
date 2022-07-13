@@ -2,7 +2,7 @@
     /*
         usage: used to get current date 
         how to call : http://localhost/flutter_php/ws/getdate.php 
-        output :
+        output : [{"day":"12","month":"07","year":"2022"}]
         input : nothing 
     */ 
     //create blank array 
