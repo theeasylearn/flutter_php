@@ -26,12 +26,16 @@
         }
         else 
         {
-            $NewPassword = rand(10,99) . rand(10,99) . rand(10,99);
-            $NewPassword = HashPassword($NewPassword);
-            $sql = "update users set password='$NewPassword' where email='{$input['email']}'";
+            $OriginalNewPassword = rand(10,99) . rand(10,99) . rand(10,99);
+            $NewHashedPassword = HashPassword($OriginalNewPassword);
+            $sql = "update users set password='$NewHashedPassword' where email='{$input['email']}'";
             mysqli_query($link,$sql) or ReturnError(null,__LINE__);
             array_push($response,array("success"=>"yes"));
             array_push($response,array("message"=>"please check email for password"));
+            require_once("../inc/function.php");
+            $subject = "Password recorvery email";
+            $content = "your new password is $OriginalNewPassword";
+            //SendMail($input['email'],$subject,$content);
         }
         array_unshift($response,array("error"=>"no"));
     }

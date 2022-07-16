@@ -11,9 +11,10 @@
 		   
 			open php.ini file and uncomment following line in file
 			;extension=openssl
+
 			remove ;(semicolon) from begging of above line and then it will look like following
 			
-			extension=openssld
+			extension=openssl
 			
 			and then save file & restart wamp server.
 			
