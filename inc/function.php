@@ -25,11 +25,9 @@
 			and then enable less secure mail option (turn on) */ 
 			
 			require_once('../lib/class.phpmailer.php');
-			$UserName="demoblahblahblah@gmail.com"; // replace with your own gmail email address
-			$Password="THQaUN2N"; // replace with your own gmail email password
+			$UserName="rsonani00@gmail.com"; // replace with your own gmail email address
+			$Password="rnlhcrqqzhrwldyv"; // replace with your own gmail email password
 			$SenderEmailAddress=$UserName; // replace with your own gmail email address
-			$ContactName="Ankit M Patel"; // replace with your own name
-			$ReceiverName=$receiver; // replace with your receiver email address, passed as an argument in function 
 			$mail = new PHPMailer(true); 
 			$mail->IsSMTP(); 
 			try 

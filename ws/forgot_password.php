@@ -35,7 +35,7 @@
             require_once("../inc/function.php");
             $subject = "Password recorvery email";
             $content = "your new password is $OriginalNewPassword";
-            //SendMail($input['email'],$subject,$content);
+            SendMail($input['email'],$subject,$content);
         }
         array_unshift($response,array("error"=>"no"));
     }
