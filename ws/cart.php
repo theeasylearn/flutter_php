@@ -5,8 +5,7 @@
         output : 
         1) [{"error":"input is missing"}]
         2) [{"error":"no"},{"total":0}]
-        3) 
-        
+        3) [{"error":"no"},{"total":2},{"id":"2","title":"dell laptop","price":"200","quantity":"2","weight":"3500","size":"15 inch","photo":"dell.jpg","detail":"WINDOWS 10 8 GB DDR3 RAM 512 gb ssd hard disk"},{"id":"1","title":"Acer Laptop","price":"100","quantity":"2","weight":"3000","size":"15 inch","photo":"acer.jpg","detail":"WINDOWS 10 4 GB DDR3 RAM 128 gb ssd hard disk"}]
         input : usersid(required) 
     */
     require_once("../inc/connection.php");
