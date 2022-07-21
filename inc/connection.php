@@ -17,7 +17,6 @@
 	else 
 		$input = $_POST;
 	$link = mysqli_connect(SERVER,USERNAME,PASSWORD) or (ReturnError("invalid username/password/servername"));
-	
 	mysqli_select_db($link,DATABASE) or (ReturnError());
 	function ReturnError($msg=null,$line=0) //default argument
 	{

@@ -4,7 +4,7 @@
         how to call : http://localhost/flutter_php/ws/move_to_wishlist.php?usersid=3&productid=1
         output : 
         1) [{"error":"input is missing"}]
-        2) 
+        2) [{"error":"no"},{"message":"product moved to wishlist"}]
         input : usersid,productid (required)
     */
     require_once("../inc/connection.php");
