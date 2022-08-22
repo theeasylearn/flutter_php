@@ -4,6 +4,8 @@
         how to call : http://localhost/flutter_php/ws/forgot_password.php?email=ankit3385@gmail.com
         output :
         [{"error":"input is missing"}] 
+        [{"error":"no"},{"success":"yes"},{"message":"please check email for password"}]
+        [{"error":"no"},{"success":"no"},{"message":"invalid email address"}]
         input : email(required) 
     */
     require_once("../inc/connection.php");

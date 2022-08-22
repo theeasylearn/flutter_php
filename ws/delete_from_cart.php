@@ -2,7 +2,7 @@
     /*
         usage: used to remove product from cart.
 
-        how to call : http://localhost/flutter_php/ws/delete_from_cart.php?productid=1&cartid=1
+        how to call : http://localhost/flutter_php/ws/delete_from_cart.php?cartid=1
         output :
         [{"error":"input is missing"}] 
         [{"error":"no"},{"message":"product removed from cart"}]

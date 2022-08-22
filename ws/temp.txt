@@ -1,0 +1,17 @@
+Container(
+    color: Colors.blueGrey[100],
+    child: ListTile(
+      subtitle: Text(
+        "total Items = 1",
+        style: TextStyle(decoration: TextDecoration.lineThrough),
+      ),
+      title: Text("\u{20B9}${219.00}"),
+      trailing: ElevatedButton(
+        style: ButtonStyle(
+            backgroundColor:
+            MaterialStateProperty.all(Color(0xff14213d))),
+        child: Text("Place Order"),
+        onPressed: () {},
+      ),
+    ),
+  )

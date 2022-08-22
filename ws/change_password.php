@@ -39,7 +39,7 @@
             {
                 //id and password both are matching
                 $input['newpassword'] = HashPassword($input['newpassword']);
-                $sql = "update users set password=' ' where id={$input['id']}";
+                $sql = "update users set password='{$input['newpassword']}' where id={$input['id']}";
                 mysqli_query($link,$sql) or ReturnError(null,__LINE__);
                 array_push($response,array("success"=>"yes"));
                 array_push($response,array("message"=>"password changed"));
